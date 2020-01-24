@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Table</title>
+    <style>
+      .tbl {
+        width: 800px;
+        table-layout: fixed;
+        border-collapse: collapse;
+      }
+      .tbl td,
+      .tbl th {
+        border: 1px solid black;
+      }
+      .tbl caption {
+        caption-side: top;
+      }
+      .tbl .ex1 {
+        /* empty-cells: hide; */
+      }
+    </style>
+  </head>
+  <body>
+    <table class="tbl">
+      <caption>
+        table caption
+      </caption>
+      <thead>
+        <tr>
+          <th scope="col">header cell1-1</th>
+          <th scope="col">header cell1-2</th>
+          <th scope="col">header cell1-3</th>
+          <th scope="col">header cell1-4</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>
+            table data cell1-1 Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Iure tenetur illum voluptatibus odit corrupti
+            eveniet ex ratione laborum magni nobis.
+          </td>
+          <td>table data cell1-2</td>
+          <td>table data cell1-3</td>
+          <td>table data cell1-4</td>
+        </tr>
+        <tr>
+          <td>table data cell2-1</td>
+          <td>table data cell2-2</td>
+          <td>table data cell2-3</td>
+          <td>table data cell2-4</td>
+        </tr>
+        <tr>
+          <td>table data cell3-1</td>
+          <td>table data cell3-2</td>
+          <td>table data cell3-3</td>
+          <td>table data cell3-4</td>
+        </tr>
+        <tr>
+          <td>table data cell4-1</td>
+          <td>table data cell4-2</td>
+          <td class="ex1"></td>
+          <td class="ex2"></td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>

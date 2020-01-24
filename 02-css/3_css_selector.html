@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>css selector</title>
+    <style>
+      body {
+        color: violet;
+        font-size: 12px;
+      }
+      h1,
+      p {
+        text-decoration: underline;
+      }
+      .lead {
+        color: teal;
+      }
+      #lead {
+        background-color: silver;
+        color: slateblue;
+      }
+      #header > p {
+        border: 3px solid black;
+      }
+      #header em {
+        background-color: orange;
+      }
+      #header h1 + p {
+        background-color: yellow;
+      }
+      .list li + li {
+        background-color: lightblue;
+      }
+      a[title] {
+        background-color: purple;
+        color: white;
+      }
+      a[href ^="http://"] {
+        background-color: seagreen;
+      }
+      a[href$=".pdf"] {
+        background-color: yellowgreen;
+      }
+      li[title~="sample"] {
+        background-color: skyblue;
+      }
+      li[title*="goo"] {
+        background-color: slateblue;
+      }
+      li[lang|="Ko"] {
+        border-bottom: 2px solid red;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div id="header">
+        <h1>css <em>selector</em></h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio quam
+          ratione aut, vitae doloremque deleniti delectus repellat in inventore
+          dolores corrupti possimus veniam aperiam consequuntur, provident illo
+          alias aspernatur neque.
+        </p>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptate,
+          fugit culpa laborum animi mollitia nisi ratione omnis sunt quis in
+          fugiat veniam sint at amet qui. Eos voluptas iste tempore.
+        </p>
+      </div>
+      <div id="content">
+        <p id="lead">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Modi,
+          necessitatibus dicta expedita deleniti ab ad praesentium unde atque
+          rerum neque, nostrum recusandae non excepturi placeat? Ipsa vel
+          obcaecati aperiam quos!
+        </p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
+          quisquam nulla dignissimos ullam, accusamus rem eveniet dolores neque
+          rerum nihil voluptates deleniti molestiae! Id optio ipsa omnis
+          quisquam tempore alias!
+        </p>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio
+          incidunt, similique nihil ad, quisquam debitis sequi harum atque quae
+          velit delectus aliquam recusandae in minus corrupti labore earum
+          itaque maxime.
+        </p>
+
+        <ol class="list">
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li lang="Ko">Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+          <li>Lorem ipsum dolor sit amet.</li>
+        </ol>
+        <ul>
+          <li><a href="http://daum.net">daum</a></li>
+          <li><a href="http://naver.com">naver</a></li>
+          <li><a href="mailto:help@naver.com" title="help mail">help</a></li>
+          <li><a href="file/download.pdf">download</a></li>
+          <li title="some text sample">
+            Lorem ipsum dolor sit amet.
+          </li>
+          <li title="good job baby">
+            <a href="#"></a> Lorem ipsum dolor sit amet.
+          </li>
+          <li><a href="#"></a> Lorem ipsum dolor sit amet.</li>
+        </ul>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minima aut
+          illum quia ducimus voluptatem doloremque, doloribus assumenda eos
+          ipsam excepturi veritatis. Culpa, magni consectetur! Laudantium
+          similique doloremque adipisci commodi excepturi.
+        </p>
+      </div>
+    </div>
+  </body>
+</html>

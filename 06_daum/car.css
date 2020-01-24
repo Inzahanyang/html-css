@@ -1,0 +1,59 @@
+#content {
+  width: 860px;
+  margin: 0 auto;
+}
+
+.car_gallery {
+  margin-bottom: 15px;
+}
+.car_gallery ul {
+  zoom: 1;
+}
+.car_gallery ul::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.car_gallery li {
+  float: left;
+  width: 200px;
+  margin: 15px 15px 0 0;
+}
+.car_gallery li a {
+  display: block;
+  position: relative;
+  color: #222;
+}
+.car_gallery li a:hover {
+  color: #118eff;
+}
+
+.car_gallery li a .thumb {
+}
+.car_gallery li a .thumb img {
+  width: 100%;
+}
+
+.car_gallery li a .text {
+  display: block;
+  margin-top: 5px;
+  line-height: 1.2;
+  padding: 0 4px;
+}
+.car_gallery li a .ico {
+  position: absolute;
+  right: 10px;
+  top: 90px;
+  width: 23px;
+  height: 23px;
+  display: block;
+  background: url(img/ico.png) no-repeat;
+  text-indent: -9999em;
+}
+.car_gallery li a .ico.mov {
+  background-position: -70px 0;
+}
+.car_gallery li a .ico.pic {
+  background-position: -40px 0;
+}

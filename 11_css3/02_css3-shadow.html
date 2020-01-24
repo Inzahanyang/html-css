@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Shadow</title>
+    <style>
+      /*
+            selector {
+                -webkit-attribute: value; chrome,safari
+                -moz-attribute: value; firefox
+                -ms-attribute: value; IE, outlook
+                -o-attribute: value; opera
+                attribute: value;
+            }
+         */
+      #wrap {
+        width: 600px;
+        margin: auto;
+      }
+      #wrap h1 {
+        border: 1px solid #333;
+        padding: 0.5em;
+        font: bold 100px arial, sans-serif;
+        text-transform: uppercase;
+        text-shadow: 2px 2px 0 rgba(255, 255, 255, 1), -20px 10px 20px rgba(0, 0, 0, 0.6);
+        box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.5), inset 5px 5px 30px 20px rgba(255, 0, 0, 0.5);
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>shadow</h1>
+    </div>
+  </body>
+</html>

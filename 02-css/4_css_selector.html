@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>css selector</title>
+    <style>
+      body {
+        color: #333;
+      }
+      a {
+        color: #888;
+        text-decoration: none;
+      }
+      a:hover,
+      a:active,
+      a:focus {
+        color: red;
+        text-decoration: underline;
+      }
+      /* a:link {
+        color: green;
+        text-decoration: underline;
+      }
+      a:visited {
+        color: gray;
+        text-decoration: underline;
+      }
+      a:hover {
+        color: red;
+        text-decoration: underline;
+      }
+      a:active {
+        color: blue;
+        text-decoration: underline;
+      }
+      a:focus {
+        background-color: red;
+      } */
+
+      .lead::first-line {
+        background-color: lime;
+      }
+      .lead::first-letter {
+        font-size: 5em;
+      }
+      h1::before {
+        content: "Before area ";
+        color: cadetblue;
+      }
+      h1::after {
+        content: " After area";
+        color: blueviolet;
+      }
+      div {
+        background-color: darkkhaki;
+      }
+      .sample {
+        background-color: rgb(233, 109, 233);
+      }
+      #sample {
+        background-color: rgb(238, 172, 91);
+      }
+      /* div#sample.sample {
+        background-color: yellowgreen;
+      } */
+      div {
+        background-color: red !important;
+      }
+      /* type = 1 , class = 10, id = 100, inlineStyle = 1000, !important = 무조껀  */
+    </style>
+  </head>
+  <body>
+    <h1>css selector</h1>
+    <p class="lead">
+      <a href="http://naver.com">naver</a> sit amet consectetur adipisicing
+      elit. Ex dolores libero, animi aspernatur harum alias ab quis consequatur
+      quas mollitia facilis sed,
+      <a href="#">earum maxime consequuntur?</a> Architecto accusamus laborum
+      sunt consectetur.
+    </p>
+    <hr />
+    <div class="sample" id="sample">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro, atque
+      soluta debitis iusto aspernatur blanditiis aperiam dolorum facere ipsum
+      praesentium incidunt, eveniet itaque vel quidem commodi. Eum laborum nam
+      expedita.
+    </div>
+  </body>
+</html>

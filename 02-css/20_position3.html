@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>position</title>
+    <style>
+      .box {
+        padding: 20px;
+        width: 200px;
+        border: 5px solid black;
+        background-color: rgba(255, 0, 0, 0.5);
+        font: 12px/1.6 verdana, sans-serif;
+      }
+      .box::first-letter {
+        font-size: 2em;
+        font-weight: bold;
+      }
+      .area {
+        position: relative;
+        width: 500px;
+        margin: 0 auto;
+        border: 5px dashed red;
+      }
+      .a {
+        position: relative; /* 위치고정 가장 바깥쪽 기준*/
+        background-color: rgba(255, 0, 0, 0.8);
+      }
+      .b {
+        position: relative;
+        left: 50px;
+        margin-top: -200px;
+        background-color: rgba(0, 255, 0, 0.8);
+      }
+      .c {
+        position: relative;
+        left: 100px;
+        margin-top: -200px;
+        background-color: rgba(0, 0, 255, 0.8);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="area">
+      <div class="box a">A Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut neque, saepe nulla enim, voluptas similique repellat voluptates temporibus aperiam dignissimos ea corporis? Excepturi ratione beatae voluptatem, maxime deserunt vel.</div>
+      <div class="box b">B Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut neque, saepe nulla enim, voluptas similique repellat voluptates temporibus aperiam dignissimos ea corporis? Excepturi ratione beatae voluptatem, maxime deserunt vel.</div>
+      <div class="box c">C Lorem ipsum dolor sit amet consectetur adipisicing elit. Qui aut neque, saepe nulla enim, voluptas similique repellat voluptates temporibus aperiam dignissimos ea corporis? Excepturi ratione beatae voluptatem, maxime deserunt vel.</div>
+    </div>
+    <hr />
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis recusandae, distinctio eum quidem laudantium ullam nesciunt autem, quo voluptates atque non fuga impedit corporis repudiandae dignissimos iusto minus esse. Praesentium ad a sint enim odit adipisci rerum eos sequi? Enim dolore dolores et incidunt tempora qui impedit in. Nihil illum, ut natus quos error fugiat eaque repudiandae, rerum, totam aliquam iure. Assumenda commodi quae quasi nulla facere repellendus asperiores aspernatur modi quis perspiciatis dolore dolor magni voluptatem tempore quisquam numquam maiores, adipisci blanditiis eos, nihil, illum ullam impedit quidem reiciendis. Officia nesciunt odit, dolorum aspernatur repellat itaque voluptate corporis earum?</p>
+  </body>
+</html>

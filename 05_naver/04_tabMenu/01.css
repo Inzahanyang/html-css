@@ -1,0 +1,114 @@
+.wrap {
+  width: 960px;
+  margin: 0 auto;
+}
+
+.tab_list {
+  position: relative;
+  width: 700px;
+  height: 200px;
+}
+.tab_list li.m1,
+.tab_list li.m2,
+.tab_list li.m3 {
+}
+
+.tab_list li.m1 > a,
+.tab_list li.m2 > a,
+.tab_list li.m3 > a {
+  display: block;
+  float: left;
+  padding: 0 30px;
+  border: 1px solid #aaa;
+  line-height: 35px;
+  color: #666;
+  font-size: 15px;
+  background-color: #eee;
+  text-decoration: none;
+}
+
+.tab_list li.m1.active > a,
+.tab_list li.m2.active > a,
+.tab_list li.m3.active > a {
+  position: relative;
+  z-index: 1;
+  border-bottom-color: #fff;
+  background-color: #fff;
+  color: #222;
+  font-weight: "bold";
+}
+
+.tab_list li.m1 ul,
+.tab_list li.m2 ul,
+.tab_list li.m3 ul {
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 36px;
+  width: 100%;
+  border-top: 1px solid #aaa;
+  padding-top: 10px;
+}
+
+.tab_list li.m1 ul li,
+.tab_list li.m2 ul li,
+.tab_list li.m3 ul li {
+  /* overflow: hidden; */
+  line-height: 1.5;
+  margin-bottom: 6px;
+  padding-bottom: 3px;
+  border-bottom: 1px dashed #ddd;
+}
+
+.tab_list li.m1 ul li::after,
+.tab_list li.m2 ul li::after,
+.tab_list li.m3 ul li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.tab_list li.m1 ul li a,
+.tab_list li.m2 ul li a,
+.tab_list li.m3 ul li a {
+  float: left;
+  color: #666;
+}
+
+.tab_list li.m1 ul li span,
+.tab_list li.m2 ul li span,
+.tab_list li.m3 ul li span {
+  float: right;
+  color: #666;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 11px;
+}
+
+.tab_list li.m1.active ul,
+.tab_list li.m2.active ul,
+.tab_list li.m3.active ul {
+  display: block;
+}
+
+.tab_list li.m1 .more,
+.tab_list li.m2 .more,
+.tab_list li.m3 .more {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: 12px;
+  line-height: 1.5;
+}
+
+.tab_list li.m1 .more a,
+.tab_list li.m2 .more a,
+.tab_list li.m3 .more a {
+  color: #666;
+  letter-spacing: -1px;
+}
+
+.tab_list li.m1.active .more,
+.tab_list li.m2.active .more,
+.tab_list li.m3.active .more {
+  display: block;
+}

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TabMenu</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./01.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="tab_list">
+        <ul>
+          <li class="m1">
+            <a href="#"><span>공지사항</span></a>
+            <ul>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-10</span></li>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-09</span></li>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a> <span>2017-10-08</span></li>
+            </ul>
+            <p class="more"><a href="#">공지사항 더보기</a></p>
+          </li>
+          <li class="m1 active">
+            <a href="#"><span>보도자료</span></a>
+            <ul>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-2-10</span></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-2-12</span></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-4-20</span></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a> <span>2017-5-11</span></li>
+            </ul>
+            <p class="more"><a href="#">보도자료 더보기</a></p>
+          </li>
+          <li class="m1">
+            <a href="#"><span>해명자료</span></a>
+            <ul>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-5-15</span></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-6-12</span></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-7-30</span></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-8-02</span></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a> <span>2017-9-24</span></li>
+            </ul>
+            <p class="more"><a href="#">해명자료 더보기</a></p>
+          </li>
+        </ul>
+      </div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perferendis porro veniam nam? Animi consequatur
+        provident quidem sed non laboriosam dolorem officiis, tenetur et ratione eius repudiandae excepturi consequuntur
+        aliquid voluptates obcaecati autem similique placeat illo deleniti dolorum possimus asperiores cumque quam?
+        Maxime molestias doloremque dolore ducimus! Perferendis doloremque earum odit ad at eligendi veniam
+        exercitationem corporis iusto ullam inventore cum dolorum dolor ipsam, in sed officia quos optio, quam, dolorem
+        error. Repellendus amet, odit quod aliquid similique doloremque dolorem ea magni vitae repudiandae molestias
+        veritatis minus facilis officia, tempora deleniti dignissimos quam fugit nemo rerum quibusdam reprehenderit.
+        Quisquam, officia mollitia.
+      </p>
+    </div>
+    <script>
+      const taps = document.querySelectorAll(".m1");
+      for (let i = 0; i < taps.length; i++) {
+        taps[i].addEventListener("click", function(e) {
+          taps[0].classList.remove("active");
+          taps[1].classList.remove("active");
+          taps[2].classList.remove("active");
+          taps[i].classList.add("active");
+        });
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>text-overflow</title>
+    <style>
+      #wrap {
+        width: 600px;
+        padding: 20px;
+        margin: auto;
+        border: 1px solid black;
+        border-width: 0 1px;
+        font: 11px arial, sans-serif;
+      }
+
+      .sample {
+        display: block;
+        overflow: hidden;
+        width: 100%;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <p class="sample">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis laboriosam obcaecati ex magnam! Sapiente
+        tempore, vero molestias nesciunt non accusamus et deserunt qui rerum dignissimos, voluptatibus nobis eum id
+        eveniet.
+      </p>
+      <span class="sample"
+        >Lorem ipsum dolor sit amet consectetur, adipisicing elit. Totam explicabo commodi, tempora, ipsam aut suscipit
+        ut alias iste aliquid dolore consectetur esse iure. Harum aut tempora ipsa nostrum odit. Pariatur.</span
+      >
+    </div>
+  </body>
+</html>

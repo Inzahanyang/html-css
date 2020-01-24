@@ -1,0 +1,48 @@
+#wrap {
+  background-color: gray;
+}
+#header {
+  min-width: 970px;
+  padding: 20px 0;
+  background-color: red;
+}
+#header .header-area {
+  width: 970px;
+  margin: 0 auto;
+}
+#container {
+  width: 970px;
+  margin: 0 auto;
+  padding-bottom: 30px;
+  background-color: limegreen;
+}
+#container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container #content {
+  float: right;
+  width: 600px;
+  background-color: dodgerblue;
+}
+#container #content .inn {
+  padding: 20px;
+}
+#container .aside {
+  float: left;
+  width: 370px;
+  background-color: gold;
+}
+#container .aside .inn {
+  padding: 20px;
+}
+#footer {
+  min-width: 970px;
+  padding: 20px 0;
+  background-color: silver;
+}
+#footer .footer-area {
+  width: 970px;
+  margin: 0 auto;
+}

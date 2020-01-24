@@ -1,0 +1,54 @@
+#wrap {
+  width: 970px;
+  margin: 0 auto;
+  background-color: gray;
+}
+#header {
+  padding: 20px;
+  background-color: red;
+}
+#container {
+  padding-bottom: 30px;
+  background-color: limegreen;
+}
+#container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container #content {
+  float: right;
+  width: 62%;
+  background-color: dodgerblue;
+}
+#container #content .inn {
+  padding: 20px;
+}
+#container .aside {
+  float: left;
+  width: 38%;
+  background-color: gold;
+}
+#container .aside .inn {
+  padding: 20px;
+}
+#footer {
+  padding: 20px;
+  background-color: silver;
+}
+
+@media screen and (max-width: 970px) {
+  #wrap {
+    width: auto;
+  }
+}
+@media screen and (max-width: 480px) {
+  #container #content {
+    float: none;
+    width: auto;
+  }
+  #container .aside {
+    float: none;
+    width: auto;
+  }
+}

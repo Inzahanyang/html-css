@@ -1,0 +1,55 @@
+#wrap {
+  width: 970px;
+  margin: 0 auto;
+  background-color: gray;
+}
+h1,
+h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+#header {
+  padding: 20px;
+  background-color: red;
+}
+#container {
+  padding-bottom: 30px;
+  background-color: limegreen;
+}
+#container::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+#container #content {
+  position: relative;
+  left: 24%;
+  float: left;
+  width: 52%;
+  background-color: dodgerblue;
+}
+#container #content .inn {
+  padding: 20px;
+}
+#container .nav {
+  position: relative;
+  left: -52%;
+  float: left;
+  width: 24%;
+  background-color: purple;
+}
+#container .nav .inn {
+  padding: 20px;
+}
+#container .aside {
+  float: right;
+  width: 24%;
+  background-color: gold;
+}
+#container .aside .inn {
+  padding: 20px;
+}
+#footer {
+  padding: 20px;
+  background-color: silver;
+}

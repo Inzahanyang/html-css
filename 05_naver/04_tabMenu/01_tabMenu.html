@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>TabMenu</title>
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="./01.css" />
+  </head>
+  <body>
+    <div class="wrap">
+      <div class="tab_list">
+        <ul>
+          <li class="m1">
+            <a href="#"><span>공지사항</span></a>
+            <ul>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
+              <li><a href="#">이것은 첫 번째 탭의 공지사항 목록 입니다.</a></li>
+            </ul>
+            <p class="more"><a href="#">공지사항 더보기</a></p>
+          </li>
+          <li class="m1 active">
+            <a href="#"><span>보도자료</span></a>
+            <ul>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 두 번째 탭의 보도자료 목록 입니다.</a></li>
+            </ul>
+            <p class="more"><a href="#">보도자료 더보기</a></p>
+          </li>
+          <li class="m1">
+            <a href="#"><span>해명자료</span></a>
+            <ul>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+              <li><a href="#">이것은 세 번째 탭의 해명자료 목록 입니다.</a></li>
+            </ul>
+            <p class="more"><a href="#">해명자료 더보기</a></p>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <script>
+      const taps = document.querySelectorAll(".m1");
+      for (let i = 0; i < taps.length; i++) {
+        taps[i].addEventListener("click", function(e) {
+          taps[0].classList.remove("active");
+          taps[1].classList.remove("active");
+          taps[2].classList.remove("active");
+          taps[i].classList.add("active");
+        });
+      }
+    </script>
+  </body>
+</html>

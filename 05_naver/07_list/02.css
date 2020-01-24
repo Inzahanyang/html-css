@@ -1,0 +1,38 @@
+#content {
+  width: 80%;
+  margin: 0 auto;
+}
+#content h1 {
+  font-size: 30px;
+  font-weight: bold;
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.flexible_img_row {
+}
+.flexible_img_row li {
+  padding: 20px 0;
+  border-bottom: 1px solid #ccc;
+}
+.flexible_img_row li::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.flexible_img_row li a {
+  color: #333;
+}
+.flexible_img_row li a .thumb {
+  float: left;
+  margin: 0 15px 15px 0;
+}
+.flexible_img_row li a strong {
+  display: block;
+  margin-bottom: 8px;
+  /* 마진은 인라인에서는 좌우에만 적용이된다 */
+}
+.flexible_img_row li p {
+  color: #666;
+  line-height: 1.3;
+}

@@ -1,0 +1,148 @@
+#header {
+  width: 1200px;
+  margin: 0 auto;
+}
+#header .tle {
+  float: left;
+  margin: 35px 0 23px 3px;
+}
+#header .tle a {
+  display: block;
+  width: 140px;
+  height: 60px;
+  background: url(img/estate.png) no-repeat 0 0;
+  text-indent: -9999em;
+}
+.blind {
+  display: block;
+  position: absolute;
+  left: 0;
+  top: -9999em;
+  overflow: hidden;
+}
+#header .sub {
+  float: left;
+  margin: 35px 0 0 23px;
+}
+#header .sub li {
+}
+#header .sub li a {
+  display: block;
+  width: 100px;
+  height: 60px;
+  background: url(img/estate.png) no-repeat 0 -60px;
+  text-indent: -9999em;
+}
+#header .area {
+  padding: 10px;
+  clear: both;
+  *zoom: 1;
+  border-top: 1px solid #cdcdcd;
+  border-bottom: 1px solid #cdcdcd;
+}
+#header .area::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+#header .area .gnb_real {
+  float: left;
+}
+#header .area .gnb_real li {
+  float: left;
+}
+#header .area .gnb_real li a {
+  display: block;
+  height: 60px;
+  background: url(img/estate.png) no-repeat 0 -200px;
+  text-indent: -9999em;
+}
+
+#header .area .gnb_real li.mm01 a {
+  width: 140px;
+  background-position: 0 -200px;
+}
+#header .area .gnb_real li.mm02 a {
+  width: 80px;
+  background-position: -160px -200px;
+}
+#header .area .gnb_real li.mm03 a {
+  width: 80px;
+  background-position: -275px -200px;
+}
+#header .area .gnb_real li.mm04 a {
+  width: 80px;
+  background-position: -390px -200px;
+}
+#header .area .gnb_real li.mm05 a {
+  width: 80px;
+  background-position: -500px -200px;
+}
+#header .area .gnb_real li.mm06 a {
+  width: 140px;
+  background-position: -610px -200px;
+}
+#header .area .gnb_real li.mm07 a {
+  width: 80px;
+  background-position: -770px -200px;
+}
+#header .area .gnb_real li.mm08 a {
+  width: 140px;
+  background-position: -880px -200px;
+}
+
+/* a */
+
+#header .area .gnb_real li.mm01 a:hover {
+  width: 140px;
+  background-position: 0 -340px;
+}
+#header .area .gnb_real li.mm02 a:hover {
+  width: 80px;
+  background-position: -160px -340px;
+}
+#header .area .gnb_real li.mm03 a:hover {
+  width: 80px;
+  background-position: -265px -340px;
+}
+#header .area .gnb_real li.mm04 a:hover {
+  width: 80px;
+  background-position: -380px -340px;
+}
+#header .area .gnb_real li.mm05 a:hover {
+  width: 80px;
+  background-position: -500px -340px;
+}
+#header .area .gnb_real li.mm06 a:hover {
+  width: 140px;
+  background-position: -610px -340px;
+}
+#header .area .gnb_real li.mm07 a:hover {
+  width: 80px;
+  background-position: -770px -340px;
+}
+#header .area .gnb_real li.mm08 a:hover {
+  width: 140px;
+  background-position: -880px -340px;
+}
+
+/* a */
+
+#header .area .gnb_with {
+  float: right;
+}
+#header .area .gnb_with li {
+  float: right;
+}
+#header .area .gnb_with li a {
+  display: block;
+  width: 120px;
+  height: 40px;
+  background: url(img/estate.png) no-repeat 0 -110px;
+  text-indent: -9999em;
+}
+#header .area .app {
+}
+#header .area .app a {
+}

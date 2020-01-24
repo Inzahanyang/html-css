@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Opacity</title>
+    <style>
+      body {
+        background: url(img/photo.png);
+      }
+      #wrap {
+        width: 600px;
+        padding: 20px;
+        margin: auto;
+        font: 11px arial, sans-serif;
+      }
+      #wrap h1.sample1 {
+        border: 1px solid black;
+        color: #f00;
+        font-size: 100px;
+        background-color: rgba(255, 0, 0, 0.3);
+        /* background-color: hsla(30, 100%, 50%, 0.3); */
+      }
+      #wrap h1.sample2 {
+        opacity: 0.5;
+        border: 1px solid black;
+        color: #f00;
+        font-size: 100px;
+        background-color: dodgerblue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1 class="sample1">Opacity</h1>
+      <h1 class="sample2">Opacity</h1>
+    </div>
+  </body>
+</html>
