@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transition</title>
+    <style>
+      body {
+        font: 12px "Malgun Gothinc", sans-serif;
+      }
+      #wrap {
+        width: 700px;
+        margin: 0 auto;
+      }
+      .box {
+        width: 100px;
+        height: 100px;
+        background-color: lime;
+        /* transition: width 1s 0.1s linear; */
+        /* transition-property: width;
+        transition-duration: 3s;
+        transition-delay: 1s;
+        transition-timing-function: linear; */
+        /* transition: width 3s linear, height 1s 3s, background-color 2s 4s; */
+        /* transition: all 2s; */
+        /* transition: all 1s cubic-bezier(0.25, 1.5, 0.75, -0.5); */
+        transition: all 1s steps(3, start);
+      }
+      .box:hover {
+        width: 100%;
+        /* height: 200px;
+        background-color: dodgerblue; */
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap"><div class="box"></div></div>
+  </body>
+</html>

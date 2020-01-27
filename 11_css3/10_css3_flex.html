@@ -32,5 +32,8 @@
         </p>
       </div>
     </div>
+    <script>
+      console.log(Promise.resolve(Promise.resolve(Promise.resolve(1))).then(console.log));
+    </script>
   </body>
 </html>
