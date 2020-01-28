@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>transform</title>
+    <style>
+      body {
+        font: 12px "Malgun Gothic", sans-serif;
+      }
+      #wrap {
+        width: 900px;
+        margin: 0 auto;
+      }
+      #wrap::after {
+        content: "";
+        display: block;
+        clear: both;
+      }
+      .filter {
+        float: left;
+        width: 300px;
+        border: 2px solid black;
+        box-sizing: border-box;
+      }
+      .filter img {
+        width: 100%;
+        transition: all 1s;
+        cursor: pointer;
+      }
+      .filter.blur img:hover {
+        filter: blur(5px);
+      }
+      .filter.brightness img:hover {
+        filter: brightness(2);
+      }
+      .filter.contrast img:hover {
+        filter: contrast(2);
+      }
+      .filter.drop_shadow img:hover {
+        filter: drop-shadow(-30px 20px 0 rgba(0, 0, 0, 0.4));
+      }
+      .filter.grayscale img:hover {
+        filter: grayscale(1);
+      }
+      .filter.hue_rotate img:hover {
+        filter: hue-rotate(360deg);
+      }
+      .filter.invert img:hover {
+        filter: invert(1);
+      }
+      .filter.opacity img:hover {
+        filter: opacity(0.5);
+      }
+      .filter.sepia img:hover {
+        filter: sepia(1);
+      }
+      .filter strong {
+        display: block;
+        padding: 0.3em 0.5em;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <div class="filter blur">
+        <img src="img/bread.jpg" alt="" />
+        <strong>blur</strong>
+      </div>
+      <div class="filter brightness">
+        <img src="img/bread.jpg" alt="" />
+        <strong>brightness</strong>
+      </div>
+      <div class="filter contrast">
+        <img src="img/bread.jpg" alt="" />
+        <strong>contrast</strong>
+      </div>
+      <div class="filter drop_shadow">
+        <img src="img/bread.jpg" alt="" />
+        <strong>drop_shadow</strong>
+      </div>
+      <div class="filter grayscale">
+        <img src="img/bread.jpg" alt="" />
+        <strong>grayscale</strong>
+      </div>
+      <div class="filter hue_rotate">
+        <img src="img/bread.jpg" alt="" />
+        <strong>hue_rotate</strong>
+      </div>
+      <div class="filter invert">
+        <img src="img/bread.jpg" alt="" />
+        <strong>invert</strong>
+      </div>
+      <div class="filter opacity">
+        <img src="img/bread.jpg" alt="" />
+        <strong>opacity</strong>
+      </div>
+      <div class="filter sepia">
+        <img src="img/bread.jpg" alt="" />
+        <strong>sepia</strong>
+      </div>
+    </div>
+  </body>
+</html>
