@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>responsible web</title>
+    <style>
+      body {
+        color: #555;
+        font: 12px/1.5 "Trebuchet MS", sans-serif;
+      }
+      #wrap {
+        width: 700px;
+        margin: 0 auto;
+        padding: 0 15px;
+        box-sizing: border-box;
+      }
+      @media screen and (min-width: 1200px) {
+        #wrap {
+          width: 1200px;
+        }
+      }
+      @media screen and (max-width: 700px) {
+        #wrap {
+          width: auto;
+        }
+      }
+      @media screen and (max-width: 970px) and (min-width: 481px) {
+        body {
+          background-color: violet;
+        }
+      }
+      @media screen and (max-width: 480px) {
+        body {
+          font-size: 14px;
+        }
+      }
+      @media screen and (orientation: portrait) {
+        h1::after {
+          content: " portrait view";
+          font-size: 0.8em;
+          color: dodgerblue;
+        }
+      }
+      @media screen and (orientation: landscape) {
+        h1::after {
+          content: " landscape view";
+          font-size: 0.8em;
+          color: red;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrap">
+      <h1>LOGO</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum, ipsum quo error assumenda incidunt corporis
+        pariatur quisquam ullam eos dolore dicta ut mollitia eum impedit in magnam quia aperiam atque. Nobis iure porro
+        itaque, quibusdam numquam quia sapiente repudiandae molestias, explicabo error cupiditate dolores assumenda
+        aliquam. Voluptas vel harum necessitatibus repudiandae. Qui quisquam laboriosam nulla ratione velit libero
+        repellendus obcaecati corporis quibusdam pariatur distinctio sint magnam totam dignissimos, impedit iure
+        consequatur cum assumenda a. Qui ex, repudiandae dolore dolores ullam ratione soluta. Quis laudantium
+        distinctio, nisi rerum modi illo molestias ducimus quasi est eaque atque quaerat! Quas vel debitis
+        reprehenderit.
+      </p>
+    </div>
+  </body>
+</html>
