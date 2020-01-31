@@ -1,0 +1,68 @@
+@media screen and (max-width: 760px) {
+  #wrap {
+    width: auto;
+  }
+  #footer .btm_menu {
+    float: none;
+    margin-bottom: 10px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  body,
+  h1,
+  h2 {
+    font-size: 15px;
+  }
+  #header {
+    padding-bottom: 0;
+    background-image: none !important;
+  }
+  #header .logo {
+    position: static;
+    background-color: #272727;
+    text-align: center;
+  }
+  #header .logo a {
+    display: block;
+    padding: 5px 0;
+  }
+  #header .lnb {
+    padding-left: 0;
+  }
+  #header .lnb li {
+    float: none;
+  }
+  #header .lnb li a {
+    width: 100% !important;
+    height: 40px;
+    border-bottom: 1px solid #666;
+    background-image: none !important;
+    background-color: #444;
+    color: #999;
+    font: bold 18px/40px "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Lucida Sans", Arial, sans-serif;
+    text-align: center;
+    text-indent: 0;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  #header .lnb li a.on,
+  #header .lnb li a:hover {
+    border-bottom-color: #888;
+    background-color: #777;
+    color: #fff;
+  }
+  #container #contents {
+    float: none;
+    width: 100%;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ccc;
+  }
+  #container #aside {
+    float: none;
+    width: 100%;
+  }
+  #container #aside .inner {
+    padding-left: 25px;
+  }
+}
